@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #f5f6fa;
+    color: #30336b;
+    font-size: 20px;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    background-color: white;
+    padding: 0.5rem 2rem;
+}
+input{
+    background-color: #30336b;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    font-size: 20px;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome <%= user.username %>,</h1><h2> your email id is <%= user.email %></h2>
+        <form method="POST" action="/user/logout">
+            <input type="submit" value="LogOut">
+        </form>
+    </div>
+</body>
+</html>
