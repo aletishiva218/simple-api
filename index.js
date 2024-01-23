@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 
 import register from "./Routes/Routes/register.js";
 import login from "./Routes/Routes/login.js";
-import forgotPassword from "./Routes/Routes/forgotpassword.js";
+import forgotPassword from "./Routes/Routes/forgotPassword.js";
 import changePassword from "./Routes/Routes/changepassword.js";
 import dashboard from "./Routes/Routes/dashboard.js";
 import logout from "./Routes/Routes/logout.js";
